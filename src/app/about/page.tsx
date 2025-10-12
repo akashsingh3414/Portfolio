@@ -35,8 +35,10 @@ export default function AboutPage() {
           id="intro-heading"
           className="font-sans text-3xl md:text-4xl font-extrabold text-balance"
         >
-          Hi, I am Akash
+          Hi, I am Akash{" "}
+          <span className="inline-block animate-wave origin-[70%_70%]">👋</span> 
         </h1>
+        
 
        <p className="leading-relaxed">
           I&apos;m passionate about understanding how things work, especially in technology, and enjoy solving problems with curiosity and logic. Outside of coding, I like staying active and energized through activities like table tennis and listening to music.

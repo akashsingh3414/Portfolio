@@ -12,6 +12,14 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "Semantic Book Recommender",
+    stack: "Python, Hugging Face, LangChain, ChromaDB, Gradio, Transformers",
+    description:
+      "Built a semantic book recommendation system using Hugging Face LLMs for semantic search, zero-shot genre classification, and emotion analysis. Features an interactive Gradio dashboard for intelligent book discovery.",
+    github: "https://github.com/akashsingh3414/Semantic-Book-Recommender",
+    date: "Oct 2025",
+  },
+  {
     title: "NeuroSonic Audio CNN",
     stack: "PyTorch, NumPy, Pandas, FastAPI, Docker, Python",
     description:
