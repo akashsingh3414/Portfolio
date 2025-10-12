@@ -1,6 +1,10 @@
+'use client'
+import { useState } from 'react'
+
 export default function ResumePage() {
-  const resumePath = '/AKASH_IIITSM_PD.pdf';
-  const downloadFileName = 'AKASH_IIITSM_PD.pdf';
+  const resumePath = '/AKASH_IIITSM_PD.pdf'
+  const downloadFileName = 'AKASH_IIITSM_PD.pdf'
+  const [loadError, setLoadError] = useState(false)
 
   return (
     <main className="max-w-4xl mx-auto p-4">
@@ -20,20 +24,40 @@ export default function ResumePage() {
       <hr className="mb-6"/>
       
       <div className="w-full h-[850px] border-2 border-gray-300 rounded-lg overflow-hidden shadow-xl bg-gray-100">
-        <iframe
-          src={resumePath}
+        <object
+          data={resumePath}
+          type="application/pdf"
           width="100%"
           height="100%"
-          title="Resume Preview"
-          aria-label="Resume Preview"
-          scrolling="auto"
+          onError={() => setLoadError(true)}
         >
-          <p>
-            Your browser does not support embedded PDF viewing. Please use the 
-            <a href={resumePath} download>Download Resume</a> link above.
+          <p className="text-center text-gray-600 text-sm mt-4">
+            Your browser does not support embedded PDF viewing. Please use the{' '}
+            <a
+              href={resumePath}
+              download={downloadFileName}
+              className="text-blue-600 underline hover:text-blue-800 transition-colors"
+            >
+              Download Resume
+            </a>{' '}
+            link above.
           </p>
-        </iframe>
+        </object>
       </div>
+
+      {loadError && (
+        <p className="text-center text-gray-600 text-sm mt-4">
+          Failed to load the PDF. Please{' '}
+          <a
+            href={resumePath}
+            download={downloadFileName}
+            className="text-blue-600 underline hover:text-blue-800 transition-colors"
+          >
+            download it here
+          </a>
+          .
+        </p>
+      )}
     </main>
-  );
+  )
 }

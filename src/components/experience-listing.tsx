@@ -7,9 +7,17 @@ type ExperienceItemProps = {
   duration: string
   description: ReactNode
   className?: string
+  url?: string
 }
 
-export function ExperienceListCard({ role, company, duration, description, className }: ExperienceItemProps) {
+export function ExperienceListCard({
+  role,
+  company,
+  duration,
+  description,
+  className,
+  url,
+}: ExperienceItemProps) {
   return (
     <article
       className={cn(
@@ -20,8 +28,20 @@ export function ExperienceListCard({ role, company, duration, description, class
     >
       <div className="shrink-0 md:w-64">
         <h3 className="font-semibold leading-snug">
-          <span className="text-foreground">{role}</span> <span className="text-muted-foreground">at</span>{" "}
-          <span className="text-foreground">{company}</span>
+          <span className="text-foreground">{role}</span>{" "}
+          <span className="text-muted-foreground">at</span>{" "}
+          {url ? (
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground underline hover:text-blue-600 transition-colors"
+            >
+              {company}
+            </a>
+          ) : (
+            <span className="text-foreground">{company}</span>
+          )}
         </h3>
         <p className="text-sm text-muted-foreground mt-1">{duration}</p>
       </div>

@@ -59,7 +59,7 @@ export default function HomePage() {
             href="https://github.com/akashsingh3414"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-700 hover:text-black transition-transform duration-300 transform hover:scale-110 w-10 h-10"
+            className={`text-gray-700 transition-transform duration-300 transform hover:scale-110 w-10 h-10`}
           >
             <SiGithub className="w-full h-full" />
           </a>

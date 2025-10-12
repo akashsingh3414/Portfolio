@@ -47,6 +47,7 @@ export default function ExperiencePage() {
               </ul>
             </>
           }
+          url="https://www.truxie.in/"
         />
       </section>
     </main>

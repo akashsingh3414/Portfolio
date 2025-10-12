@@ -8,6 +8,7 @@ export function SiteFooter({ className }: SiteFooterProps) {
   return (
     <footer className={`border-t border-border py-4 ${className || ""}`}>
       <div className="mx-auto max-w-4xl px-4 text-center text-sm text-muted-foreground">
+        <div>Designed and Developed by Akash Singh</div>
         <p>© {new Date().getFullYear()} Akash Singh</p>
         <div className="mt-2 flex items-center justify-center gap-6">
           <Link

@@ -15,9 +15,9 @@ type ListingCardProps = {
 
 export default function ListingCard({ title, description, github, deployment, meta }: ListingCardProps) {
   return (
-    <div className="group rounded-2xl border border-gray-200 p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md dark:border-gray-800 dark:bg-gray-900">
+    <div className="group rounded-2xl grid border border-gray-200 p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md dark:border-gray-800 dark:bg-gray-900">
       <div className="flex items-start justify-between">
-        <h2 className="text-lg font-semibold group-hover:text-gray-700 transition-colors">
+        <h2 className="text-lg font-semibold group-hover:text-blue-700 transition-colors">
           <Link href={github} target="_blank">{title}</Link>
         </h2>
         {meta?.date && (

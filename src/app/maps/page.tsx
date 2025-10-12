@@ -3,8 +3,8 @@ import { Container } from "@/components/container"
 export default function MapsPage() {
   return (
     <Container>
-      <p className="leading-relaxed mb-4">
-        Will update soon
+      <p className="leading-relaxed mb-4 text-center text-muted-foreground">
+        For now it&apos;s empty here. You can check out this section later.
       </p>
 
       <div className="rounded-lg border border-border overflow-hidden">
