@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { Suspense } from "react"
 import DynamicTitle from "@/components/dynamic-title"
+import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
   title: "Akash Singh",
@@ -16,8 +17,14 @@ const baloo = Baloo_2({ subsets: ["latin", "devanagari"], variable: "--font-balo
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${baloo.variable} antialiased`}>
+    <html lang="en" className={`${inter.variable} ${baloo.variable} antialiased`} suppressHydrationWarning>
       <body className="font-sans min-h-screen flex flex-col">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <Suspense
             fallback={
               <div className="flex items-center justify-center h-screen bg-gray-50">
@@ -33,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main className="flex-1 px-4 pt-12">{children}</main>
           <SiteFooter className="mt-auto" />
         </Suspense>
+        </ThemeProvider>
       </body>
     </html>
   )

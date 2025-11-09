@@ -68,7 +68,7 @@ export default function AboutPage() {
         </div>
 
         <p className="leading-relaxed mt-16 italic text-lg">
-          PS: When I&apos;m not coding, I stay active and energized with table tennis, music, and a bit of exploring new hobbies.
+          PS: When I&apos;m not coding, you&apos;ll probably find me playing table tennis - it&apos;s what I love most.
         </p>
       </section>
     </Container>

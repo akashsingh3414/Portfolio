@@ -21,7 +21,7 @@ export function ExperienceListCard({
   return (
     <article
       className={cn(
-        "flex flex-col gap-2 md:flex-row md:items-start md:gap-6 border-b border-border/60 py-6",
+        "flex flex-col gap-2 rounded-2xl shadow-sm md:flex-row md:items-start md:gap-6 border-b border-border/60 p-5 mb-5 dark:border-gray-800 dark:bg-gray-900 transition-all duration-300 hover:scale-110",
         className,
       )}
       aria-label={`${role} at ${company}`}

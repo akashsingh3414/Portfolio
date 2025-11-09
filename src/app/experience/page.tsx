@@ -14,7 +14,7 @@ export default function ExperiencePage() {
         href="https://www.linkedin.com/in/akashsingh3414/"
         target="_blank"
         rel="noopener noreferrer"
-        className="relative text-base font-medium text-gray-700 transition-all duration-200 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full hover:text-blue-600"
+        className="relative text-base font-medium text-gray-700 transition-all duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full hover:text-blue-600"
         >
         checkout my LinkedIn
         </Link>
@@ -26,7 +26,7 @@ export default function ExperiencePage() {
         <ExperienceListCard
           role="Software Developer Intern"
           company="Truxie (Prayas Logistics)"
-          duration="05/2025 – Present"
+          duration="05/2025 - Present"
           description={
             <>
               <ul className="list-disc pl-5 space-y-1">

@@ -23,7 +23,7 @@ const projects: Project[] = [
     title: "NeuroSonic Audio CNN",
     stack: "PyTorch, NumPy, Pandas, FastAPI, Docker, Python",
     description:
-      "Developed and evaluated an environmental sound classifier using Mel Spectrograms and a ResNet-based CNN on the ESC-50 dataset, achieving 80% classification accuracy.",
+      "Developed and evaluated an environmental sound classification model using Mel Spectrograms and a ResNet-based CNN on the ESC-50 dataset, achieving 80-85% classification accuracy. Incorporated data augmentation techniques such as pitch shifting and time shifting, which enhanced model robustness and improved overall training performance.",
     github: "https://github.com/akashsingh3414/NeuroSonic-Audio-CNN",
     date: "Aug 2025",
   },
