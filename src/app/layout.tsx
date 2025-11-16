@@ -10,6 +10,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 export const metadata: Metadata = {
   title: "Akash Singh",
   description: "Personal website",
+  icons: {
+    icon: "/favicon.png",
+  }
 }
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })

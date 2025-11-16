@@ -3,10 +3,10 @@ import { Container } from "@/components/container"
 
 export default function AboutPage() {
   const techLinks: Record<string, string> = {
-    cpp: "https://isocpp.org",
     js: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     ts: "https://www.typescriptlang.org/",
     python: "https://www.python.org/",
+    cpp: "https://isocpp.org",
     java: "https://www.oracle.com/java/",
     fastapi: "https://fastapi.tiangolo.com/",
     nestjs: "https://nestjs.com/",
@@ -33,11 +33,11 @@ export default function AboutPage() {
           className="font-sans text-3xl md:text-4xl font-extrabold text-balance"
         >
           Hey there!, I&apos;m Akash{" "}
-          <span className="inline-block animate-wave origin-[70%_70%]">👋</span>
+          <span className="inline-block animate-wave origin-[70%_70%] cursor-pointer hover:scale-110">👋</span>
         </h1>
 
         <p className="leading-relaxed">
-          I&apos;m passionate about programming and always love learning new ways to solve problems. I work with languages like <span className="text-blue-600 font-medium">Python</span>, <span className="text-blue-600 font-medium">C++</span>, and <span className="text-blue-600 font-medium">JavaScript/TypeScript</span>. My main areas of interest are building <span className="text-blue-600 font-medium">backend systems</span> and <span className="text-blue-600 font-medium">scalable applications</span>, while also exploring <span className="text-blue-600 font-medium">AI</span>, <span className="text-blue-600 font-medium">Machine Learning</span>, and <span className="text-blue-600 font-medium">Data Science</span>.
+          I&apos;m passionate about programming and always love learning new ways to solve problems. I work with languages like <span className="text-blue-600 font-medium">Python</span>, <span className="text-blue-600 font-medium">JavaScript/TypeScript</span>, and <span className="text-blue-600 font-medium">C++</span>. My main areas of interest are building <span className="text-blue-600 font-medium">backend systems</span> and <span className="text-blue-600 font-medium">scalable applications</span>, while also exploring <span className="text-blue-600 font-medium">AI</span>, <span className="text-blue-600 font-medium">Machine Learning</span>, and <span className="text-blue-600 font-medium">Data Science</span>.
         </p>
 
         <hr className="border-border mt-6" />

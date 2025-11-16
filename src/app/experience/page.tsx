@@ -26,23 +26,24 @@ export default function ExperiencePage() {
         <ExperienceListCard
           role="Software Developer Intern"
           company="Truxie (Prayas Logistics)"
-          duration="05/2025 - Present"
+          duration="05/2025 - 11/2025"
           description={
             <>
               <ul className="list-disc pl-5 space-y-1">
                 <li>
-                  Contributed to building scalable back-end services using NestJS, TypeScript,
-                  PostgreSQL, and Docker, optimizing database schemas and queries for better
-                  performance.
+                  Worked on core backend logic for bidding, quote updates, and transaction handling, ensuring race conditions were avoided.
                 </li>
                 <li>
-                  Enhanced software reliability by maintaining comprehensive unit and end-to-end
-                  tests in Jest, boosting test coverage by 40% and minimizing production issues.
+                  Implemented the quote-price calculation flow using a pipeline-style architecture.
                 </li>
                 <li>
-                  Developed and integrated 50+ REST APIs, collaborating with cross-functional
-                  teams to improve performance, security, and scalability while following clean
-                  design patterns within an Agile environment.
+                  Set up document and data workflows using Supabase for uploads, checks, and secure access.
+                </li>
+                <li>
+                  Added cron jobs for tasks like refreshing quotes/bids and running scheduled recalculations.
+                </li>
+                <li>
+                  Wrote detailed Jest tests (unit and e2e) with seed data to keep the system reliable and stable.
                 </li>
               </ul>
             </>

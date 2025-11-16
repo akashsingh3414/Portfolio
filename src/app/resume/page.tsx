@@ -3,8 +3,8 @@
 import { useEffect, useState } from 'react';
 
 export default function ResumePage() {
-  const resumePath = '/AKASH_IIITSM_PD.pdf';
-  const downloadFileName = 'AKASH_IIITSM_PD.pdf';
+  const resumePath = '/AKASH_IIITSM.pdf';
+  const downloadFileName = 'AKASH_IIITSM.pdf';
   const pdfUrl = `${resumePath}#toolbar=0&navpanes=0&scrollbar=0`;
 
   const [status, setStatus] = useState<'loading' | 'ok' | 'error'>('loading');

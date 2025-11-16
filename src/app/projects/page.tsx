@@ -15,7 +15,7 @@ const projects: Project[] = [
     title: "Semantic Book Recommender",
     stack: "Python, Hugging Face, LangChain, ChromaDB, Gradio, Transformers",
     description:
-      "Built a semantic book recommendation system using Hugging Face LLMs for semantic search, zero-shot genre classification, and emotion analysis. Features an interactive Gradio dashboard for intelligent book discovery.",
+      "Created a recommendation system with sentence-transformer embeddings for semantic search, zero-shot classification for genres, and sentiment analysis across 7,000+ books. Integrated ChromaDB vector database for fast similarity search with preprocessing pipeline for text cleaning, tokenization, and normalization using Pandas and NumPy.",
     github: "https://github.com/akashsingh3414/Semantic-Book-Recommender",
     date: "Oct 2025",
   },
@@ -23,15 +23,14 @@ const projects: Project[] = [
     title: "NeuroSonic Audio CNN",
     stack: "PyTorch, NumPy, Pandas, FastAPI, Docker, Python",
     description:
-      "Developed and evaluated an environmental sound classification model using Mel Spectrograms and a ResNet-based CNN on the ESC-50 dataset, achieving 80-85% classification accuracy. Incorporated data augmentation techniques such as pitch shifting and time shifting, which enhanced model robustness and improved overall training performance.",
+      "Developed an environmental sound classifier using a ResNet-based CNN on ESC-50 dataset (2,000 samples, 50 classes), achieving 80-85% accuracy. Enhanced model performance by 15% through data augmentation with mel-spectrogram transformations, pitch shifting, time stretching, and mixup regularization.",
     github: "https://github.com/akashsingh3414/NeuroSonic-Audio-CNN",
     date: "Aug 2025",
   },
   {
     title: "SwiftChat",
     stack: "MongoDB, Express, React, Node.js, Socket.IO, PeerJS, Zustand",
-    description:
-      "Built a real-time communication platform with messaging, spaces for group conversations, and WebRTC-based video calling. Managed global state with Zustand for a smooth and responsive UX.",
+    description: "Designed a real-time chat platform with Socket.IO messaging, group spaces, WebRTC video calling, and shared video rooms with independent playback controls. Added presence tracking, automatic video cleanup, and state management with Zustand for handling user interactions and UI updates.",
     github: "https://github.com/akashsingh3414/swiftchat",
     deployment: "https://swiftchatnew.onrender.com/",
     date: "Feb 2025",

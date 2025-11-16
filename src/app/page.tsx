@@ -24,7 +24,7 @@ export default function HomePage() {
 
         <h1 className="text-4xl md:text-5xl font-extrabold">
           Hi, I am Akash{" "}
-          <span className="inline-block animate-wave origin-[70%_70%]">👋</span>
+          <span className="inline-block animate-wave origin-[70%_70%] cursor-pointer hover:scale-110">👋</span>
         </h1>
 
         <p className="max-w-xl text-gray-600 text-lg md:text-xl">
