@@ -40,7 +40,7 @@ export function SiteHeader({ className }: SiteHeaderProps) {
                 href={item.href}
                 aria-current={active ? "page" : undefined}
                 className={cn(
-                  "relative font-medium transition-all duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full hover:text-blue-600",
+                  "relative font-medium transition-all duration-300 hover:scale-110 hover:border-white after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full hover:text-blue-600",
                   active && "font-semibold text-blue-700 after:w-full",
                 )}
               >

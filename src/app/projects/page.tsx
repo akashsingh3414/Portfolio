@@ -54,7 +54,7 @@ export default function ProjectsPage() {
           <ListingCard
             key={project.title}
             title={project.title}
-            description={project.description}
+            description={project.description.split(". ")}
             github={project.github}
             meta={{ stack: project.stack, date: project.date }}
             deployment={project.deployment}

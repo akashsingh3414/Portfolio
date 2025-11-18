@@ -7,7 +7,7 @@ type Meta = {
 
 type ListingCardProps = {
   title: string
-  description?: string
+  description?: string[]
   github: string
   deployment?: string
   meta?: Meta
@@ -33,8 +33,12 @@ export default function ListingCard({ title, description, github, deployment, me
         </p>
       )}
 
-      {description && (
-        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{description}</p>
+      {Array.isArray(description) && description.length > 0 && (
+        <ul className="mt-2 list-disc list-inside text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+          {description.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
       )}
 
       {(github || deployment) && (
