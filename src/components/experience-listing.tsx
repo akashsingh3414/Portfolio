@@ -35,7 +35,7 @@ export function ExperienceListCard({
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative text-base font-large transition-all duration-200 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full hover:text-blue-600"
+              className="relative text-base font-large transition-all duration-200 text-blue-600 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
             >
               {company}
             </a>

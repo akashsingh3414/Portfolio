@@ -12,20 +12,20 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "NeuroSonic Audio CNN",
+    stack: "PyTorch, NumPy, Pandas, FastAPI, Docker, Python",
+    description:
+      "Developed an environmental sound classifier using a ResNet-based CNN on ESC-50 dataset (2,000 samples, 50 classes), achieving 80-85% accuracy. Enhanced model performance by 15% through data augmentation with mel-spectrogram transformations, pitch shifting, time stretching, and mixup regularization.",
+    github: "https://github.com/akashsingh3414/NeuroSonic-Audio-CNN",
+    date: "Nov 2025",
+  },
+  {
     title: "Semantic Book Recommender",
     stack: "Python, Hugging Face, LangChain, ChromaDB, Gradio, Transformers",
     description:
       "Created a recommendation system with sentence-transformer embeddings for semantic search, zero-shot classification for genres, and sentiment analysis across 7,000+ books. Integrated ChromaDB vector database for fast similarity search with preprocessing pipeline for text cleaning, tokenization, and normalization using Pandas and NumPy.",
     github: "https://github.com/akashsingh3414/Semantic-Book-Recommender",
     date: "Oct 2025",
-  },
-  {
-    title: "NeuroSonic Audio CNN",
-    stack: "PyTorch, NumPy, Pandas, FastAPI, Docker, Python",
-    description:
-      "Developed an environmental sound classifier using a ResNet-based CNN on ESC-50 dataset (2,000 samples, 50 classes), achieving 80-85% accuracy. Enhanced model performance by 15% through data augmentation with mel-spectrogram transformations, pitch shifting, time stretching, and mixup regularization.",
-    github: "https://github.com/akashsingh3414/NeuroSonic-Audio-CNN",
-    date: "Aug 2025",
   },
   {
     title: "SwiftChat",

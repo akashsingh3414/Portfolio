@@ -7,18 +7,17 @@ import Link from "next/link"
 
 export default function ExperiencePage() {
   return (
-    <main className="mx-auto max-w-3xl px-4">
+    <main className="mx-auto max-w-4xl px-4">
       <p className="mt-3 text-muted-foreground">
         A brief overview of my recent role. For more details, feel free to{" "}
         <Link
-        href="https://www.linkedin.com/in/akashsingh3414/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="relative text-base font-medium text-gray-700 transition-all duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full hover:text-blue-600"
+          href="https://www.linkedin.com/in/akashsingh3414/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative text-base font-medium text-gray-700 transition-all duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full hover:text-blue-600"
         >
-        checkout my LinkedIn
+          checkout my LinkedIn
         </Link>
-
         .
       </p>
 
@@ -31,19 +30,32 @@ export default function ExperiencePage() {
             <>
               <ul className="list-disc pl-5 space-y-1">
                 <li>
-                  Worked on core backend logic for bidding, quote updates, and transaction handling, ensuring race conditions were avoided.
+                  Developed scalable backend services using <strong>NestJS, TypeScript, and PostgreSQL</strong>,
+                  handling high-throughput transactions with proper concurrency control.
                 </li>
                 <li>
-                  Implemented the quote-price calculation flow using a pipeline-style architecture.
+                  Designed and implemented <strong>payment and payout services</strong> with idempotency keys,
+                  retry mechanisms, and duplicate request detection to ensure consistency and fault tolerance.
                 </li>
                 <li>
-                  Set up document and data workflows using Supabase for uploads, checks, and secure access.
+                  Built a <strong>pipeline-based data processing architecture</strong> for pricing, payments,
+                  and transaction workflows.
                 </li>
                 <li>
-                  Added cron jobs for tasks like refreshing quotes/bids and running scheduled recalculations.
+                  Implemented <strong>API rate limiting and request throttling</strong> via middleware to
+                  protect services under high traffic and prevent abuse.
                 </li>
                 <li>
-                  Wrote detailed Jest tests (unit and e2e) with seed data to keep the system reliable and stable.
+                  Worked on core domain APIs including <strong>shipments, bidding workflows, drivers, and payments</strong>,
+                  contributing to end-to-end business-critical backend services.
+                </li>
+                <li>
+                  Designed and maintained <strong>50+ REST APIs</strong> following clean architecture
+                  principles in an Agile development environment.
+                </li>
+                <li>
+                  Wrote comprehensive <strong>Jest unit and e2e tests</strong> with seed data to ensure
+                  reliability, correctness, and regression safety.
                 </li>
               </ul>
             </>
