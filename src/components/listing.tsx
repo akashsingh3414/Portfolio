@@ -34,11 +34,20 @@ export default function ListingCard({ title, description, github, deployment, me
       )}
 
       {Array.isArray(description) && description.length > 0 && (
-        <ul className="mt-2 list-disc list-inside text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-          {description.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+        <div className="mt-2 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+          {description.map((item, index) => {
+            const parts = item.split(/(\*\*.*?\*\*)/g);
+            return (
+              <p key={index} className="mb-1.5 last:mb-0">
+                {parts.map((part, i) =>
+                  part.startsWith('**') && part.endsWith('**')
+                    ? <strong key={i} className="font-semibold text-gray-800 dark:text-gray-200">{part.slice(2, -2)}</strong>
+                    : part
+                )}
+              </p>
+            );
+          })}
+        </div>
       )}
 
       {(github || deployment) && (

@@ -12,10 +12,19 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "Tenki Talk (Weather-Aware AI)",
+    stack: "Next.js, React, Google Gemini, Hugging Face (Llama 3.2), Chrome Built-in AI, Web Speech API",
+    description:
+      "Built a **weather-aware travel planner** with **multilingual voice interaction** and context-aware itinerary generation using **Google Gemini** and **Hugging Face Llama 3.2**. Engineered multi-layer fallbacks across **voice recognition** (Web Speech API → Whisper), **translation** (Chrome Built-in AI → i18n), and **AI providers** (Hugging Face → Gemini) for graceful degradation.",
+    github: "https://github.com/akashsingh3414/Tenki-Talk-Weather-AI",
+    deployment: "https://tenki-talk-weather-ai.vercel.app/",
+    date: "Jan 2026",
+  },
+  {
     title: "NeuroSonic Audio CNN",
     stack: "PyTorch, NumPy, Pandas, FastAPI, Docker, Python",
     description:
-      "Developed an environmental sound classifier using a ResNet-based CNN on ESC-50 dataset (2,000 samples, 50 classes), achieving 80-85% accuracy. Enhanced model performance by 15% through data augmentation with mel-spectrogram transformations, pitch shifting, time stretching, and mixup regularization.",
+      "Developed an environmental sound classifier using a **ResNet-based CNN** on **ESC-50 dataset** (2,000 samples, 50 classes), achieving **80-85% accuracy**. Enhanced model performance by **15%** through **data augmentation** with **mel-spectrogram transformations**, **pitch shifting**, **time stretching**, and **mixup regularization**.",
     github: "https://github.com/akashsingh3414/NeuroSonic-Audio-CNN",
     date: "Nov 2025",
   },
@@ -23,14 +32,14 @@ const projects: Project[] = [
     title: "Semantic Book Recommender",
     stack: "Python, Hugging Face, LangChain, ChromaDB, Gradio, Transformers",
     description:
-      "Created a recommendation system with sentence-transformer embeddings for semantic search, zero-shot classification for genres, and sentiment analysis across 7,000+ books. Integrated ChromaDB vector database for fast similarity search with preprocessing pipeline for text cleaning, tokenization, and normalization using Pandas and NumPy.",
+      "Created a recommendation system with **sentence-transformer embeddings** for **semantic search**, **zero-shot classification** for genres, and **sentiment analysis** across **7,000+ books**. Integrated **ChromaDB vector database** for fast similarity search with **preprocessing pipeline** for text cleaning, tokenization, and normalization using **Pandas** and **NumPy**.",
     github: "https://github.com/akashsingh3414/Semantic-Book-Recommender",
     date: "Oct 2025",
   },
   {
     title: "SwiftChat",
     stack: "MongoDB, Express, React, Node.js, Socket.IO, PeerJS, Zustand",
-    description: "Designed a real-time chat platform with Socket.IO messaging, group spaces, WebRTC video calling, and shared video rooms with independent playback controls. Added presence tracking, automatic video cleanup, and state management with Zustand for handling user interactions and UI updates.",
+    description: "Designed a **real-time chat platform** with **Socket.IO messaging**, group spaces, **WebRTC video calling**, and shared video rooms with **independent playback controls**. Added presence tracking, automatic video cleanup, and **state management** with **Zustand** for handling user interactions and UI updates.",
     github: "https://github.com/akashsingh3414/swiftchat",
     deployment: "https://swiftchatnew.onrender.com/",
     date: "Feb 2025",
@@ -39,7 +48,7 @@ const projects: Project[] = [
     title: "ThoughtFlow",
     stack: "MongoDB, Express, React, Node.js, Redux Toolkit, OAuth2.0",
     description:
-      "Created a secure full-stack blogging platform with JWT authentication, user roles, content publishing, and admin moderation. Front-end built with Redux Toolkit and Tailwind CSS for a clean, responsive UI.",
+      "Created a **secure full-stack blogging platform** with **JWT authentication**, **user roles**, content publishing, and **admin moderation**. Front-end built with **Redux Toolkit** and **Tailwind CSS** for a clean, responsive UI.",
     github: "https://github.com/akashsingh3414/Thought-Flow",
     deployment: "https://blogthoughtflow.onrender.com/",
     date: "Oct 2024",
