@@ -13,9 +13,9 @@ type Project = {
 const projects: Project[] = [
   {
     title: "Tenki Talk (Weather-Aware AI)",
-    stack: "Next.js, React, Google Gemini, Hugging Face (Llama 3.2), Chrome Built-in AI, Web Speech API",
+    stack: "Next.js, Vercel AI SDK, Groq, Hugging Face, Firebase Auth, Web Speech API",
     description:
-      "Built a **weather-aware travel planner** with **multilingual voice interaction** and context-aware itinerary generation using **Google Gemini** and **Hugging Face Llama 3.2**. Engineered multi-layer fallbacks across **voice recognition** (Web Speech API → Whisper), **translation** (Chrome Built-in AI → i18n), and **AI providers** (Hugging Face → Gemini) for graceful degradation.",
+      "Built a **weather-aware AI travel planner** using **Groq** with **Hugging Face** as fallback via the **Vercel AI SDK**. Implemented **context-aware conversations** by forwarding session history on each request, significantly improving response relevance. Architected a modular AI pipeline with provider-agnostic JSON extraction, multi-level fallbacks across AI providers and voice input, and a prompt system that ties every recommendation to real-time weather data.",
     github: "https://github.com/akashsingh3414/Tenki-Talk-Weather-AI",
     deployment: "https://tenki-talk-weather-ai.vercel.app/",
     date: "Jan 2026",
